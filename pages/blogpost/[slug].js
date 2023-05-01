@@ -5,14 +5,17 @@ import styles from '../../styles/BlogPost.module.css' ;
 import { useEffect, useState } from 'react';
 
 const Slug = (props) => {
+  function createMarkup(c) {
+    return {__html: c};
+  }
     const [blogs,setblogs]= useState(props.myBlog)
     
     return <div  className={styles.container}>
         <main className={styles.main}>
         <h1>{blogs && blogs.title}</h1>
         <hr />
-        <div>
-            {blogs && blogs.content} </div>
+        {blogs && <div dangerouslySetInnerHTML={createMarkup(blogs.content)} >
+             </div>}
         </main>
         </div>;
 };
