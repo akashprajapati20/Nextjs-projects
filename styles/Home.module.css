@@ -1,27 +1,3 @@
-/* 
-
-.items{
-  display: flex;
- justify-content: center;
- margin-top: 50px;
- 
- 
-}
-.items li{
-  list-style: none;
-  font-weight: bold;
-  margin: 0px 23px;
-  /* text-decoration: none; */
-
-
-/* .title{
-   display: flex;
-   justify-content: center;
-}
-.myImg{
-  display: flex;
-   justify-content: center;
-} */ 
 
 
 .container {
@@ -69,7 +45,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -79,7 +55,8 @@
 
 .description { 
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  max-width: 50vw;
 }
 
 .code {
@@ -154,7 +131,9 @@
 } 
 
 .myImg{
-  border-radius: 10px; 
+  border-radius: 84px;
+  width: 150px;
+  margin-left: 89px;
 }
 
 .imagewrap{

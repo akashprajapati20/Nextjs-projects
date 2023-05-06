@@ -55,18 +55,18 @@ const handleChange=(e)=>{
       <p className="description">Feel free to contact us if you need any assistance, any help or another question.
       </p>
       <div className={styles.mb3}>
-        <input type="text"  name='name' onChange={handleChange} id="name" value={name} placeholder="Name" required/>
+        Name :<input type="text"  name='name' onChange={handleChange} id="name" value={name} placeholder="Name" required/>
       </div>
       <div className={styles.mb3}>
-        <input type="text" name='phone' onChange={handleChange} id="phone" value={phone} placeholder="phone number" required/>
+        Phone Number :<input type="text" name='phone' onChange={handleChange} id="phone" value={phone} placeholder="phone number" required/>
       </div>
       <div className={styles.mb3}>
-        <input type="email" name='email' onChange={handleChange} id='email' value={email} placeholder="Email" required/>
+       Email : <input type="email" name='email' onChange={handleChange} id='email' value={email} placeholder="Email" required/>
       </div>
       <div className={styles.mb3}>
-        <textarea id="desc" value={desc} onChange={handleChange} name='desc'  rows="5" cols="30" placeholder="Message" required></textarea>
+       Write your Concern: <textarea id="desc" value={desc} onChange={handleChange} name='desc'  rows="5" cols="30" placeholder="Message" required></textarea>
       </div>
-      <div className={styles.mb3}>
+      <div className={styles.submit}>
         <input type="submit"  value="Send"/>
       </div>
     </form>
